@@ -4,7 +4,7 @@ import uuid
 from datetime import datetime
 
 # Base URL for FastAPI
-API_BASE_URL = st.secrets("API_BASE_URL")
+API_BASE_URL = st.secrets["API_BASE_URL"]
 st.set_page_config(page_title="Crustdata API Buddy", page_icon=":robot_face:")
 
 def create_new_session():
