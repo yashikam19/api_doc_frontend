@@ -121,9 +121,6 @@ with st.sidebar:
 if st.session_state.session_id is None:
     st.info("Please create a new session to start chatting!")
 else:
-    # Display current session info
-    st.markdown(f"**Current Session:** {st.session_state.session_id}")
-    
     # Display chat messages
     for msg in st.session_state.messages:
         st.chat_message(msg["role"]).write(msg["content"])
